@@ -30,9 +30,12 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "Firefox",  NULL, "Picture-in-Picture", 0,        1,           -1 },
-	{ "Steam",    NULL,       NULL,       0,            1,           -1 },
 	{ "vlc",      NULL,       NULL,       0,            1,           -1 },
 	{ "Godot",    NULL,       NULL,       0,            1,           -1 },
+
+	// Games
+	{ "Steam",    NULL,       NULL,       0,            1,           -1 },
+	{ "heroic",   NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
