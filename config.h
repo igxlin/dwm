@@ -30,7 +30,8 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 
-	// Games
+	/* Games */
+	/* Keep origin floating otherwise it cannot be launched successfully */
 	{ NULL,       NULL,       "Origin",   0,            1,           -1 },
 };
 
