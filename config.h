@@ -62,7 +62,9 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { 
+	"st", "-e", "tmux", "new-session", "-A", "-s", "main", NULL,
+};
 static const char *fullscreenshotcmd[] = { "scrot", "-e", "mv $f ~/Downloads/", NULL };
 static const char *screenshotcmd[] = { "scrot", "-s", "-e", "mv $f ~/Downloads/", NULL };
 static const char *windowshotcmd[] = { "scrot", "-bs", "-e", "mv $f ~/Downloads/", NULL };
